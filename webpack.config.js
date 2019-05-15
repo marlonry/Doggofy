@@ -1,13 +1,14 @@
-// entry point
-// output
-// loaders
-// plugins
-const path = require('path') // build in node package for absolute paths
-const SassWebpackPlugin = require('sass-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin'); // plugin to output index.html and insert script tag into it on the distribution folder automatically.
+// Core Concepts in Webpack
+// # entry point
+// # output
+// # loaders
+// # plugins
+
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    entry: './src/js/index.js',
+    entry: ['@babel/polyfill', './src/js/index.js'],
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'js/bundle.js'
@@ -22,13 +23,26 @@ module.exports = {
         })
     ],
     module: {
-        rules: [{
-            test: /\.scss$/,
-            use: [
-                "style-loader", // creates style nodes from JS strings
-                "css-loader", // translates CSS into CommonJS
-                "sass-loader", // compiles Sass to CSS, using Node Sass by default
-            ]
-        }]
+        rules: 
+        [
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ['@babel/preset-env'],
+                    }
+                }
+            },
+            {
+                test: /\.scss$/,
+                use: [
+                    'style-loader', // creates style nodes from JS strings
+                    'css-loader', // translates CSS into CommonJS
+                    'sass-loader', // compiles Sass to CSS, using Node Sass by default
+                ]
+            }
+        ]
     }
 }
