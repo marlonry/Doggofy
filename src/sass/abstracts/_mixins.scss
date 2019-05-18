@@ -1,0 +1,9 @@
+@mixin content-maximum-width {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+@mixin item-maximum-width {
+    max-width: 80rem;
+    margin: 0 auto;
+}

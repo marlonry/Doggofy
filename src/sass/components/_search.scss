@@ -1,0 +1,27 @@
+.search {
+    max-width: 50rem;
+    margin: 0 auto;
+    position: relative;
+    
+    &__input {
+        width: 100%;
+        padding: 1.2rem;
+        font-family: inherit;
+        border-radius: 20rem;
+        border: .3rem solid $color-primary-dark;
+        transition: all .3s;
+
+        &:focus {
+            outline: none;
+            border: .3rem solid;         
+        }
+
+    }
+
+    &__icon {
+        position: absolute;
+        top: 50%;
+        right: 1.5rem;
+        transform: translateY(-50%);
+    }
+}

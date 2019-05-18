@@ -1,0 +1,27 @@
+.row {
+    display: flex;
+    max-width: 130rem;
+    margin: 0 auto;
+
+    &:not(:last-child) {
+        margin-bottom: $grid-vertical-gutter;
+    }
+}
+
+.col-1-of-3 {
+    width: 33.333%;
+    background-color: orangered;
+
+    &:not(:last-child) {
+        margin-right: $grid-horizontal-gutter;
+    }
+}
+
+.col-1-of-4 {
+    width: 33.333%;
+    background-color: orangered;
+
+    &:not(:last-child) {
+        margin-right: $grid-horizontal-gutter;
+    }
+}

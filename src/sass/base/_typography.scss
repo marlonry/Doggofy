@@ -1,0 +1,38 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.heading-primary {
+    color: $color-black;
+    font-size: 4.8rem;
+    text-transform: capitalize;
+}
+
+.heading-secondary {
+    color: $color-black;
+    font-size: 3.6rem;
+}
+
+.heading-link {
+    color: $color-black;
+    text-decoration: none;
+}
+
+.paragraph {
+    font-size: $default-font-size;
+}
+
+.icon {
+    color: $color-primary;
+    font-size: 3rem;
+    transition: all .3s;
+    cursor: pointer;
+
+    &:hover {
+        color: $color-primary-dark;
+    }
+
+    &--white {
+        color: $color-white;
+    }
+}

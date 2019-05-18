@@ -1,0 +1,12 @@
+.banner {
+    @include content-maximum-width;
+    text-align: center;
+
+    &__text-box {
+        @include item-maximum-width;
+    }
+
+    &__search {
+        @include item-maximum-width;
+    }
+}
