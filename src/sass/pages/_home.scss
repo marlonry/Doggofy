@@ -1,9 +1,9 @@
 .banner {
-    @include content-maximum-width;
+    @include content-maximum-width; //centers content
     text-align: center;
 
     &__text-box {
-        @include item-maximum-width;
+        @include item-maximum-width; // centers items
     }
 
     &__search {

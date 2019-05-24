@@ -1,8 +1,8 @@
-.decoration {
-    height: calc(100vh - #{$header-height});
+.decoration { // the blue banne thing on the back
+    height: calc(100vh - #{$header-height}); //substracts the header height to fit vh
     width: 100%;
     position: fixed;
-    top: calc(0 + #{$header-height});
+    top: calc(0 + #{$header-height}); // moves down the blue banner the amount of the header height
     left: 0;
     z-index: -10;
     
