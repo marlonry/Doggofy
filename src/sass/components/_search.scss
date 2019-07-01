@@ -8,12 +8,12 @@
         padding: 1.2rem;
         font-family: inherit;
         border-radius: 20rem;
-        border: .3rem solid $color-primary-dark;
+        border: .3rem solid $color-primary;
         transition: all .3s;
 
         &:focus {
             outline: none;
-            border: .3rem solid;         
+            border: .3rem solid $color-primary-dark;         
         }
 
     }
