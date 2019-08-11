@@ -1,6 +1,6 @@
 ## Doggofy
 
-Vanilla Javasript Project where you can see the information about dog breeds. You can see the project live [HERE](https://choosealicense.com/licenses/mit/)!!!
+Vanilla Javasript Project where you can see the information about dog breeds. You can see the project live [HERE](https://marlonry.github.io/Doggofy/)!!!
 
 ## What I Practiced on This Project
 
