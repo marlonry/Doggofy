@@ -25,6 +25,8 @@
     &__object {
         display: flex;
         align-items: center;
+        position: relative;
+        transition: all .3s .2s;
 
         &--center {
             margin: 0 auto;
@@ -32,6 +34,31 @@
 
         &--left {
             margin-left: auto;
+        }
+    }
+
+    &__liked-cards:hover,
+    &__object:hover &__liked-cards {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &__liked-cards {
+        position: absolute;
+        // display: flex;
+        // flex-direction: column;
+        top: calc(100% + 30px);
+        right: 0;
+        background-color: $color-primary-light;
+        padding: 2rem;
+        border-radius: 10px;
+        z-index: 20;
+        visibility: hidden;
+        opacity: 0;
+        transition: all .5s .2s;
+
+        & > * {
+            cursor: pointer;
         }
     }
 

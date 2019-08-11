@@ -1,8 +1,22 @@
 .slider {
-    overflow: hidden;
+    position: relative;
+      
+
+    &__items-container {
+        overflow-y: hidden;  
+        overflow-x: scroll;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
     &__items {
-        display: flex;
         padding: 3rem;
-        min-width: 100%;
+        display: inline-flex;
+        // white-space: nowrap;
+        // width: 100%;
+        // min-width: 100%;
+        // transform: translateX(-100%);
     }
 }

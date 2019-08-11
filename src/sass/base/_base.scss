@@ -13,5 +13,53 @@
 html {
     font-size: 62.5%;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
+
+.loader {
+    margin: 2rem auto 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__ball {
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        background-color: $color-secondary;
+        // animation: loader .3s infinite;
+        // transform: scale(1);
+        &:not(:last-child) {
+            margin-right: 1.5rem;
+        }
+    }
+
+    &__ball--1 {
+        animation: loader 1.5s infinite ease-in-out;
+    }
+
+    &__ball--2 {
+        animation: loader 1.5s .25s infinite ease-in-out;
+    }
+
+    &__ball--3 {
+        animation: loader 1.5s .50s infinite ease-in-out;
+    }
+}
+
+@keyframes loader {
+    0% {
+        transform: scale(1);
+    }
+    
+    50% {
+        transform: scale(2);    
+    }
+    
+    100% {
+        transform: scale(1);    
+    }
+}
+
 

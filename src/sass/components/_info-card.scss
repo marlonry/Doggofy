@@ -1,0 +1,118 @@
+.info-card {
+    width: 100%;
+    max-width: 600px;
+    overflow: hidden;
+    background-color: $color-white;
+    border-radius: 1rem;
+    margin: 3rem auto;
+    padding-bottom: 2.5rem;
+    box-shadow: 0rem 0rem 2rem rgba($color-black, .2);
+    transition: all .3s;
+
+    &:hover {
+        box-shadow: 0rem 0rem 2rem rgba($color-black, .5);
+    }
+
+
+    &__figure {
+        position: relative;
+        height: 30rem;
+        overflow: hidden;
+
+        &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-image: linear-gradient(to bottom, rgba($color-black, .2) 70%, rgba($color-black, 0.8) 90%);
+        }
+    }
+
+    &__image {
+        min-width: 100%;
+        max-height: 100%;
+        max-width: 100%;
+        object-fit: cover;
+        object-position: 50% 20%;
+    }
+
+    &__heading {
+        font-size: 3.6rem;
+        color: $color-white;
+        position: absolute;
+        bottom: 1rem;
+        left: 2.5rem;
+        z-index: 10;
+    }
+
+    &__icon-figure {
+        z-index: 10;
+        position: absolute;
+        top: 2.5rem;
+        right: 2.5rem;
+        background-color: $color-red;
+        color: $color-white;
+        padding: 1.4rem;
+        border-radius: 50%;
+        transition: background-color .3s;
+
+        &:hover {
+            background-color: $color-white;
+        }
+    }
+
+    &__details {
+        padding: 2.5rem;
+    }
+
+    &__detail {
+        font-size: 1.6rem;
+        font-weight: 300;
+        &:not(:last-child) {
+            margin-bottom: 2.5rem;
+        }
+    }
+
+    &__detail-title {
+        font-weight: 500 !important;
+    }
+
+    &__detail-description {
+        font-size: inherit;
+        display: inline-block;
+        word-break: break-all;
+    }
+
+    h3 {
+        display: inline-block;
+    }
+
+    &__icon {
+        font-size: 2rem;
+        color: $color-icon-1;
+        display: inline-flex;
+        margin-right: .5rem;
+        vertical-align: sub;
+
+        &:hover {
+            color: darken($color-icon-1, 10%);
+        }
+    }
+}
+
+.icon-female-symbol {
+    color: $color-icon-2;
+
+    &:hover {
+        color: darken($color-icon-2, 10%);
+    }
+}
+
+.icon-male-symbol {
+    color: $color-icon-3;
+    &:hover {
+        color: darken($color-icon-3, 10%);
+    }
+}

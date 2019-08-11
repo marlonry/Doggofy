@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="fonts/styles.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <link href="https://file.myfontastic.com/zzCVD8hvZTeiBzvqFjjez6/icons.css" rel="stylesheet">
     <title>Doggofy</title>
 </head>
-<body>
+<body class="preload">
     <header class="header">
         <div class="navigation">
             <nav class="navigation__nav">
@@ -29,8 +29,54 @@
                     <div class="navigation__container ">
                         <div class="navigation__object navigation__object--left">
                             <i class="icon far fa-heart"></i>
+
+                            <div class="navigation__liked-cards">
+                                <div class="card-small">
+                                    <figure class="card-small__figure">
+                                        <img class="card-small__image" src="img/dog3.jpg" alt="Dog 1 Image">
+                                    </figure>
+                    
+                                    <h2 class="card-small__info">
+                                        Entlebucher <span class="card-small__attributes">Bold, Happy, Strong</span>
+                                    </h2>
+                                </div>
+
+                                <div class="card-small">
+                                    <figure class="card-small__figure">
+                                        <img class="card-small__image" src="img/dog3.jpg" alt="Dog 1 Image">
+                                    </figure>
+                    
+                                    <h2 class="card-small__info">
+                                        Entlebucher <span class="card-small__attributes">Bold, Happy, Strong</span>
+                                    </h2>
+                                </div>
+
+                                <div class="card-small">
+                                    <figure class="card-small__figure">
+                                        <img class="card-small__image" src="img/dog3.jpg" alt="Dog 1 Image">
+                                    </figure>
+                    
+                                    <h2 class="card-small__info">
+                                        Entlebucher <span class="card-small__attributes">Bold, Happy, Strong</span>
+                                    </h2>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
+                    <!-- <div class="liked-cards">
+                        <div class="liked-card">
+                            <img src="img/dog1.jpg" alt="Dog Image 1">
+                            <div class="liked-card-text">
+                                <h3>Samoyed</h3>
+                                <p>Friendly, Happy, Bold</p>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    
+
+                    
                 </div>
             </nav>
         </div>
@@ -57,138 +103,246 @@
             </div>
         </div>
 
+        <!-- <div class="loader">
+            <div class="loader__ball loader__ball--1"></div>
+            <div class="loader__ball loader__ball--2"></div>
+            <div class="loader__ball loader__ball--3"></div>
+        </div> -->
+
+
         <div class="slider u-margin-top-medium">
-            <div class="slider__items">
-                <div class="card">
-                    <div class="card__image-container">
-                        <img class="card__image" src="img/dog1.jpg" alt="Dog">
+
+            <button class="btn-slider btn-slider--left icon-left"></button>
+            <button class="btn-slider btn-slider--right icon-right"></button>
+
+            <div class="slider__items-container">
+
+                <div class="slider__items">
+                    <div class="card">
+                        <div class="card__image-container">
+                            <img class="card__image" src="img/dog1.jpg" alt="Dog">
+                        </div>
+                        <div class="btn-add btn-add--animated">
+                            <i class="icon icon-plus icon--white"></i>
+                        </div>
+                        <div class="card__text">
+                            <h3 class="heading-tertiary heading-tertiary--white">Entlebucher</h3>
+                            <p>Devoted, Agile, Independant</p>
+                        </div>
                     </div>
-                    <div class="btn-add btn-add--animated">
-                        <i class="icon icon-plus icon--white"></i>
+
+                    <div class="card">
+                        <div class="card__image-container">
+                            <img class="card__image" src="img/dog1.jpg" alt="Dog">
+                        </div>
+                        <div class="btn-add btn-add--animated">
+                            <i class="icon icon-plus icon--white"></i>
+                        </div>
+                        <div class="card__text">
+                            <h3 class="heading-tertiary heading-tertiary--white">Entlebucher</h3>
+                            <p>Devoted, Agile, Independant</p>
+                        </div>
                     </div>
-                    <div class="card__text">
-                        <h3 class="heading-tertiary heading-tertiary--white">Entlebucher</h3>
-                        <p>Devoted, Agile, Independant</p>
+
+                    <div class="card">
+                        <div class="card__image-container">
+                            <img class="card__image" src="img/dog1.jpg" alt="Dog">
+                        </div>
+                        <div class="btn-add btn-add--animated">
+                            <i class="icon icon-plus icon--white"></i>
+                        </div>
+                        <div class="card__text">
+                            <h3 class="heading-tertiary heading-tertiary--white">Entlebucher</h3>
+                            <p>Devoted, Agile, Independant</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__image-container">
+                            <img class="card__image" src="img/dog1.jpg" alt="Dog">
+                        </div>
+                        <div class="btn-add btn-add--animated">
+                            <i class="icon icon-plus icon--white"></i>
+                        </div>
+                        <div class="card__text">
+                            <h3 class="heading-tertiary heading-tertiary--white">Entlebucher</h3>
+                            <p>Devoted, Agile, Independant</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__image-container">
+                            <img class="card__image" src="img/dog1.jpg" alt="Dog">
+                        </div>
+                        <div class="btn-add btn-add--animated">
+                            <i class="icon icon-plus icon--white"></i>
+                        </div>
+                        <div class="card__text">
+                            <h3 class="heading-tertiary heading-tertiary--white">Entlebucher</h3>
+                            <p>Devoted, Agile, Independant</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__image-container">
+                            <img class="card__image" src="img/dog1.jpg" alt="Dog">
+                        </div>
+                        <div class="btn-add btn-add--animated">
+                            <i class="icon icon-plus icon--white"></i>
+                        </div>
+                        <div class="card__text">
+                            <h3 class="heading-tertiary heading-tertiary--white">Entlebucher</h3>
+                            <p>Devoted, Agile, Independant</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__image-container">
+                            <img class="card__image" src="img/dog1.jpg" alt="Dog">
+                        </div>
+                        <div class="btn-add btn-add--animated">
+                            <i class="icon icon-plus icon--white"></i>
+                        </div>
+                        <div class="card__text">
+                            <h3 class="heading-tertiary heading-tertiary--white">Entlebucher</h3>
+                            <p>Devoted, Agile, Independant</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__image-container">
+                            <img class="card__image" src="img/dog1.jpg" alt="Dog">
+                        </div>
+                        <div class="btn-add btn-add--animated">
+                            <i class="icon icon-plus icon--white"></i>
+                        </div>
+                        <div class="card__text">
+                            <h3 class="heading-tertiary heading-tertiary--white">Entlebucher</h3>
+                            <p>Devoted, Agile, Independant</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__image-container">
+                            <img class="card__image" src="img/dog1.jpg" alt="Dog">
+                        </div>
+                        <div class="btn-add btn-add--animated">
+                            <i class="icon icon-plus icon--white"></i>
+                        </div>
+                        <div class="card__text">
+                            <h3 class="heading-tertiary heading-tertiary--white">Entlebucher</h3>
+                            <p>Devoted, Agile, Independant</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__image-container">
+                            <img class="card__image" src="img/dog1.jpg" alt="Dog">
+                        </div>
+                        <div class="btn-add btn-add--animated">
+                            <i class="icon icon-plus icon--white"></i>
+                        </div>
+                        <div class="card__text">
+                            <h3 class="heading-tertiary heading-tertiary--white">Entlebucher</h3>
+                            <p>Devoted, Agile, Independant</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="card">
-                    <div class="card__image-container">
-                        <img class="card__image" src="img/dog1.jpg" alt="Dog">
-                    </div>
-                    <div class="btn-add btn-add--animated">
-                        <i class="icon icon-plus icon--white"></i>
-                    </div>
-                    <div class="card__text">
-                        <h3 class="heading-tertiary heading-tertiary--white">Entlebucher</h3>
-                        <p>Devoted, Agile, Independant</p>
-                    </div>
-                </div>
+            </div>
+        </div>
 
-                <div class="card">
-                    <div class="card__image-container">
-                        <img class="card__image" src="img/dog1.jpg" alt="Dog">
-                    </div>
-                    <div class="btn-add btn-add--animated">
-                        <i class="icon icon-plus icon--white"></i>
-                    </div>
-                    <div class="card__text">
-                        <h3 class="heading-tertiary heading-tertiary--white">Entlebucher</h3>
-                        <p>Devoted, Agile, Independant</p>
-                    </div>
-                </div>
 
-                <div class="card">
-                    <div class="card__image-container">
-                        <img class="card__image" src="img/dog1.jpg" alt="Dog">
-                    </div>
-                    <div class="btn-add btn-add--animated">
-                        <i class="icon icon-plus icon--white"></i>
-                    </div>
-                    <div class="card__text">
-                        <h3 class="heading-tertiary heading-tertiary--white">Entlebucher</h3>
-                        <p>Devoted, Agile, Independant</p>
-                    </div>
-                </div>
+        <!-- Results -->
 
-                <div class="card">
-                    <div class="card__image-container">
-                        <img class="card__image" src="img/dog1.jpg" alt="Dog">
-                    </div>
-                    <div class="btn-add btn-add--animated">
-                        <i class="icon icon-plus icon--white"></i>
-                    </div>
-                    <div class="card__text">
-                        <h3 class="heading-tertiary heading-tertiary--white">Entlebucher</h3>
-                        <p>Devoted, Agile, Independant</p>
-                    </div>
-                </div>
+        <!-- <div class="results">
+            <h1 class="results__heading">Choose a Dog</h1>
 
-                <div class="card">
-                    <div class="card__image-container">
-                        <img class="card__image" src="img/dog1.jpg" alt="Dog">
-                    </div>
-                    <div class="btn-add btn-add--animated">
-                        <i class="icon icon-plus icon--white"></i>
-                    </div>
-                    <div class="card__text">
-                        <h3 class="heading-tertiary heading-tertiary--white">Entlebucher</h3>
-                        <p>Devoted, Agile, Independant</p>
-                    </div>
-                </div>
+            <div class="card-small">
+                <figure class="card-small__figure">
+                    <img class="card-small__image" src="img/dog3.jpg" alt="Dog 1 Image">
+                </figure>
 
-                <div class="card">
-                    <div class="card__image-container">
-                        <img class="card__image" src="img/dog1.jpg" alt="Dog">
-                    </div>
-                    <div class="btn-add btn-add--animated">
-                        <i class="icon icon-plus icon--white"></i>
-                    </div>
-                    <div class="card__text">
-                        <h3 class="heading-tertiary heading-tertiary--white">Entlebucher</h3>
-                        <p>Devoted, Agile, Independant</p>
-                    </div>
-                </div>
+                <h2 class="card-small__info">
+                    Entlebucher <span class="card-small__attributes">Bold, Happy, Strong</span>
+                </h2>
 
-                <div class="card">
-                    <div class="card__image-container">
-                        <img class="card__image" src="img/dog1.jpg" alt="Dog">
-                    </div>
-                    <div class="btn-add btn-add--animated">
-                        <i class="icon icon-plus icon--white"></i>
-                    </div>
-                    <div class="card__text">
-                        <h3 class="heading-tertiary heading-tertiary--white">Entlebucher</h3>
-                        <p>Devoted, Agile, Independant</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card__image-container">
-                        <img class="card__image" src="img/dog1.jpg" alt="Dog">
-                    </div>
-                    <div class="btn-add btn-add--animated">
-                        <i class="icon icon-plus icon--white"></i>
-                    </div>
-                    <div class="card__text">
-                        <h3 class="heading-tertiary heading-tertiary--white">Entlebucher</h3>
-                        <p>Devoted, Agile, Independant</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card__image-container">
-                        <img class="card__image" src="img/dog1.jpg" alt="Dog">
-                    </div>
-                    <div class="btn-add btn-add--animated">
-                        <i class="icon icon-plus icon--white"></i>
-                    </div>
-                    <div class="card__text">
-                        <h3 class="heading-tertiary heading-tertiary--white">Entlebucher</h3>
-                        <p>Devoted, Agile, Independant</p>
-                    </div>
+                <div class="btn-add btn-add--animated">
+                    <i class="icon icon-plus icon--white"></i>
                 </div>
             </div>
+
+            <div class="card-small">
+                <figure class="card-small__figure">
+                    <img class="card-small__image" src="img/dog2.jpg" alt="Dog 1 Image">
+                </figure>
+
+                <h2 class="card-small__info">
+                    Entlebucher <span class="card-small__attributes">Bold, Happy, Strong</span>
+                </h2>
+
+                <div class="btn-add btn-add--animated">
+                    <i class="icon icon-plus icon--white"></i>
+                </div>
+            </div>
+
+            <div class="card-small">
+                <figure class="card-small__figure">
+                    <img class="card-small__image" src="img/dog4.jpg" alt="Dog 1 Image">
+                </figure>
+
+                <h2 class="card-small__info">
+                    Entlebucher <span class="card-small__attributes">Bold, Happy, Strong</span>
+                </h2>
+
+                <div class="btn-add btn-add--animated">
+                    <i class="icon icon-plus icon--white"></i>
+                </div>
+            </div> -->
+
+
+            <!-- Dog Info Card -->
+
+            <!-- <div class="info-card">
+                <figure class="info-card__figure">
+                    <img class="info-card__image" src="img/dog1.jpg" alt="Dog 1 Image">
+                    <h2 class="info-card__heading">Samoyed</h2>
+                    <i class="icon far fa-heart info-card__icon-figure"></i>
+                </figure>
+
+                <div class="info-card__details">
+                   <p class="info-card__detail">
+                       <i class="icon icon-temp info-card__icon"></i><span class="info-card__detail-title">Temperament:</span> friendly, happy, bold, strong, smart
+                   </p> 
+
+                   <p class="info-card__detail">
+                        <i class="icon icon-life-span info-card__icon"></i>
+                        <span class="info-card__detail-title">Life Span:</span> 12 - 13 years
+                    </p> 
+
+                    <p class="info-card__detail">
+                       <i class="icon icon-location info-card__icon"></i>
+                       <span class="info-card__detail-title">Origin:</span> Siberia, Russia
+                   </p> 
+
+                   <p class="info-card__detail">
+                       <i class="icon icon-female-symbol-1 info-card__icon"></i>
+                       <span class="info-card__detail-title">Weight:</span>
+                       <span class="info-card__detail-description">16-20 kg <i class="icon icon-female-symbol info-card__icon"></i></span>
+                       <span class="info-card__detail-description">20-30 kg <i class="icon icon-male-symbol info-card__icon"></i></span>
+                   </p> 
+
+                   <p class="info-card__detail">
+                       <i class="icon icon-height info-card__icon"></i>
+                       <span class="info-card__detail-title">Height-:</span>
+                       <span class="info-card__detail-description">48-53 cm <i class="icon icon-female-symbol info-card__icon"></i></span>
+                       <span class="info-card__detail-description">48-53 cm <i class="icon icon-male-symbol info-card__icon"></i></span>
+                   </p> 
+                </div> 
+
+                <button class="btn btn-primary">Learn More</button>
+            </div> -->
+
         </div>
     </div>
 
@@ -206,8 +360,6 @@
         <div class="col-1-of-4">text</div>
         <div class="col-1-of-4">text</div>
     </div> -->
-
-
 
 </body>
 </html>
