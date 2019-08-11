@@ -12,4 +12,4 @@ Vanilla Javasript Project where you can see the information about dog breeds. Yo
 - Local Storage
 - SCSS 7/1 Pattern file architecture
 - BEM
-
+- More...
